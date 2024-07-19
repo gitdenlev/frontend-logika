@@ -11,7 +11,7 @@ console.log(2024 + " " + "рік");
 console.log(+"123");
 
 // Інтерполяція
-// const city = "Dnipro";
+const city = "Dnipro";
 console.log(`Я люблю, ${city}!`);
 
 // Отримання символу
