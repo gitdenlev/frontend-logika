@@ -4,27 +4,27 @@
 console.log("Hello" + "World");
 console.log("Hello" + " " + "World");
 
-// Додавання чисел в рядки
+// // Додавання чисел в рядки
 console.log(2024 + " " + "рік");
 
-// Унарний плюс
-console.log(+"327");
+// // Унарний плюс
+console.log(+"123");
 
 // Інтерполяція
-const city = "Kyiv";
-console.log(`Привіт, ${city}!`);
+// const city = "Dnipro";
+console.log(`Я люблю, ${city}!`);
 
 // Отримання символу
-const carName = "Mercedes";
-console.log(carName[0]);
+const carName = "Volkswagen";
+console.log(carName[1]);
 
-// Отримання підрядка
+// // Отримання підрядка
 let friends = "Василь;Артем;Марія;Дарина";
-console.log(friends.slice(7, 13));
+console.log(friends.slice(0, 6));
 
 // Заміна символів
-friends = "Ва си ль;Ар тем;Ма рія;Да ри на";
-console.log(friends.replaceAll(" ", ""));
+friends = "Василь;Артем;Марія;Дарина";
+console.log(friends.replaceAll("Василь", "123"));
 
 // Перевірка підрядка
 friends = "Василь;Артем;Марія;Дарина";
@@ -40,7 +40,14 @@ if (friends.includes("Марія")) {
 friends = ["Василь", "Артем", "Марія", "Дарина"];
 console.log(friends.join(";")); // Отримаємо рядок "Василь;Артем;Марія;Дарина"
 
-// ------------------------------- Робота з cookie -------------------------------
+// Масив даних
+const arrayNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// Оновлення масиву (копіювання)
+const newArrayNumbers = [...arrayNumbers, 11, 12, 13, 14, 15];
+// Результат
+console.log(newArrayNumbers);
+
+// // ------------------------------- Робота з cookie -------------------------------
 
 function getCookie(name) {
   const value = `; ${document.cookie}`;
